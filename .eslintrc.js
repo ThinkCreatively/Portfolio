@@ -28,5 +28,5 @@ module.exports = {
     }],
     'import/extensions': ['error', { jsx: 'always' }],
     'no-console': ['warn']
-  },
+  }
 };
