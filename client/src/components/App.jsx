@@ -5,6 +5,7 @@ import {
 import useStyles from './GlobalStyles.jsx';
 import Home from './home/Home.jsx';
 import Projects from './projects/Projects.jsx';
+import Blog from './blog/Blog.jsx';
 
 const App = () => {
   const classes = useStyles();
@@ -18,6 +19,9 @@ const App = () => {
           <li>
             <Link to="/projects">Projects</Link>
           </li>
+          <li>
+            <Link to="/blog">Blog</Link>
+          </li>
         </ul>
         <Switch>
           <Route path="/" exact>
@@ -25,6 +29,9 @@ const App = () => {
           </Route>
           <Route path="/projects" exact>
             <Projects />
+          </Route>
+          <Route path="/blog" exact>
+            <Blog />
           </Route>
         </Switch>
       </div>
