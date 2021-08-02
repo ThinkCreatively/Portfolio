@@ -4,8 +4,12 @@ const useStyles = makeStyles(() => ({
   homeContainer: {
     border: '2px solid black'
   },
-  tabs: {
+  tabsContainer: {
     border: '2px solid black'
+  },
+  tab: {
+    border: '2px solid black',
+    textAlign: 'center'
   },
   aboutMe: {
     border: '2px solid black',
