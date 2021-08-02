@@ -12,21 +12,21 @@ const Header = () => {
     <Grid container className={globalClasses.header}>
       <Grid item xs={12} md={6} className={globalClasses.tabsContainer}>
         <Typography variant="h1">
-          James Moore
+          FILL ME IN
         </Typography>
       </Grid>
       <Grid item xs={12} md={6} className={globalClasses.tabsContainer}>
-        <Grid container>
+        <Grid container style={{ justifyContent: 'space-evenly' }}>
           <Grid item xs={12} md={5} className={globalClasses.tab}>
-            <Button variant="contained" className={globalClasses.root}>
-              <Link to="/projects">
+            <Link to="/projects">
+              <Button variant="contained" className={globalClasses.root}>
                 Projects
-              </Link>
-            </Button>
+              </Button>
+            </Link>
           </Grid>
           <Grid item xs={12} md={5} className={globalClasses.tab}>
             <Link to="/blog">
-              <Button>
+              <Button className={globalClasses.root}>
                 Blog
               </Button>
             </Link>

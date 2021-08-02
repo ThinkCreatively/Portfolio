@@ -10,11 +10,9 @@ const globalUseStyles = makeStyles(() => ({
     //
   },
   tabsContainer: {
-    border: '2px solid black',
-    justifyContent: 'space-evenly'
+    alignSelf: 'center'
   },
   tab: {
-    // border: '2px solid black',
     textAlign: 'center'
   },
   tabButton: {
