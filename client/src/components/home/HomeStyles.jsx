@@ -4,6 +4,16 @@ const useStyles = makeStyles(() => ({
   homeContainer: {
     border: '2px solid black'
   },
+  techStackContainer: {
+    width: '30%',
+    border: '2px solid red'
+  },
+  scrollLeft: {
+    position: 'fixed'
+  },
+  scrollRight: {
+    position: 'fixed'
+  },
   tabsContainer: {
     border: '2px solid black'
   },

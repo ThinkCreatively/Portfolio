@@ -9,30 +9,33 @@ const Header = () => {
   const globalClasses = globalUseStyles();
 
   return (
-    <Grid container className={globalClasses.header}>
-      <Grid item xs={12} md={6} className={globalClasses.tabsContainer}>
-        <Typography variant="h1">
-          FILL ME IN
-        </Typography>
-      </Grid>
-      <Grid item xs={12} md={6} className={globalClasses.tabsContainer}>
-        <Grid container style={{ justifyContent: 'space-evenly' }}>
-          <Grid item xs={12} md={5} className={globalClasses.tab}>
-            <Link to="/projects">
-              <Button variant="contained" className={globalClasses.root}>
-                Projects
-              </Button>
-            </Link>
-          </Grid>
-          <Grid item xs={12} md={5} className={globalClasses.tab}>
-            <Link to="/blog">
-              <Button className={globalClasses.root}>
-                Blog
-              </Button>
-            </Link>
-          </Grid>
-        </Grid>
-      </Grid>
+    // <Grid container className={globalClasses.header}>
+    //   <Grid item xs={12} md={6} className={globalClasses.tabsContainer}>
+    //     <Typography variant="h1">
+    //       FILL ME IN
+    //     </Typography>
+    //   </Grid>
+    //   <Grid item xs={12} md={6} className={globalClasses.tabsContainer}>
+    //     <Grid container style={{ justifyContent: 'space-evenly' }}>
+    //       <Grid item xs={12} md={5} className={globalClasses.tab}>
+    //         <Link to="/projects">
+    //           <Button variant="contained" className={globalClasses.root}>
+    //             Projects
+    //           </Button>
+    //         </Link>
+    //       </Grid>
+    //       <Grid item xs={12} md={5} className={globalClasses.tab}>
+    //         <Link to="/blog">
+    //           <Button className={globalClasses.root}>
+    //             Blog
+    //           </Button>
+    //         </Link>
+    //       </Grid>
+    //     </Grid>
+    //   </Grid>
+    // </Grid>
+    <Grid item xs={12}>
+      Test
     </Grid>
   );
 };
