@@ -2,7 +2,8 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(() => ({
   homeContainer: {
-    border: '2px solid black'
+    border: '2px solid black',
+    height: '500px'
   },
   techStackContainer: {
     width: '30%',
