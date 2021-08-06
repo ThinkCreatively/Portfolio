@@ -11,7 +11,12 @@ const Home = () => {
         Left Scroll
       </Grid>
       <Grid item xs={12} md={10} className={classes.homeContainer}>
-        Body
+        <Typography variant="h1" align="center">
+          Heading Text
+        </Typography>
+        <Typography variant="h4" align="center">
+          image of me
+        </Typography>
       </Grid>
       <Grid item xs={12} md={1} className={classes.scroll}>
         Right Scroll
