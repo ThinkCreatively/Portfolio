@@ -37,10 +37,12 @@ const AboutMe = () => {
           src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
           alt="Github"
           className="bg-white rounded-full border-4"
+          linkUrl="https://github.com/ThinkCreatively"
         />
         <AboutMeImage
           src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg"
-          alt="Github"
+          alt="LinkedIn"
+          linkUrl="https://www.linkedin.com/in/jmoore99/"
         />
       </div>
     </div>
