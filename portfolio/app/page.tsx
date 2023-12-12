@@ -9,7 +9,10 @@ export default function Home() {
         <CustomSection>
           <AboutMe />
         </CustomSection>
-        <CustomSection>
+        <CustomSection extra="items-center">
+          <div className="border-2 h-32 w-10/12">
+
+          </div>
           <TextBlurb>
             Let us figure out how to make the items start at the top, for both
             of these sections, this section should have at minimum three
