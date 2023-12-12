@@ -7,7 +7,6 @@ const CustomSection = (props: { children: ReactNode }) => {
         flex
         flex-col
         relative
-        border-2
         overflow-auto
         justify-center
         ml-5
@@ -16,7 +15,6 @@ const CustomSection = (props: { children: ReactNode }) => {
         items-top
         w-1/2
         self-start
-        border-green-500
       "
     >
       {props.children}

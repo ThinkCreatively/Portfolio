@@ -1,15 +1,13 @@
 import CustomSection from "./customComps/section";
 import TextBlurb from "./customComps/textBlurb";
+import AboutMe from "./customComps/aboutMe";
 
 export default function Home() {
   return (
     <main>
       <div className="flex justify-center content-between min-h-screen min-w-full px-6 bg-indigo-950">
         <CustomSection>
-          <TextBlurb>
-            This section will start with an intro and my name on top, a picture
-            of myself in the middle, then a blurb about myself on top
-          </TextBlurb>
+          <AboutMe />
         </CustomSection>
         <CustomSection>
           <TextBlurb>
