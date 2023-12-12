@@ -13,7 +13,7 @@ const AboutMe = () => {
         solutions.
       </span>
       <span className="text-xl text-center my-6">What I work with best</span>
-      <div className="flex justify-around">
+      <div className="flex justify-around items-center">
         <AboutMeImage
           src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
           alt="Typescript"
