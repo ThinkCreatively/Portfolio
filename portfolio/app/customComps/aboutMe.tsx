@@ -12,9 +12,7 @@ const AboutMe = () => {
         and challenge of working through problems leveraging code for my
         solutions.
       </span>
-      <span className="text-xl text-center my-6">
-        Here are some of my favorite tools to work with
-      </span>
+      <span className="text-xl text-center my-6">What I work with best</span>
       <div className="flex justify-around">
         <AboutMeImage
           src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
@@ -31,6 +29,18 @@ const AboutMe = () => {
         <AboutMeImage
           src="https://upload.wikimedia.org/wikipedia/commons/0/05/Go_Logo_Blue.svg"
           alt="Golang"
+        />
+      </div>
+      <span className="text-xl text-center my-6">My Links</span>
+      <div className="flex justify-around">
+        <AboutMeImage
+          src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+          alt="Github"
+          className="bg-white rounded-full border-4"
+        />
+        <AboutMeImage
+          src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg"
+          alt="Github"
         />
       </div>
     </div>

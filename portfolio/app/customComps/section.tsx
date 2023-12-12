@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-const CustomSection = (props: { children: ReactNode }) => {
+const CustomSection = (props: { children: ReactNode; className?: string }) => {
   return (
     <div
       className="
@@ -15,6 +15,8 @@ const CustomSection = (props: { children: ReactNode }) => {
         items-top
         w-1/2
         self-start
+        border-2
+        border-green-500
       "
     >
       {props.children}
