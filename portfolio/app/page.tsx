@@ -12,20 +12,16 @@ export default function Home() {
   const getMouseLocation = (e: any) => {
     var x = e.clientX;
     var y = e.clientY;
-    var newposX = x - 60;
-    var newposY = y - 60;
+    var newposX = x - 350;
+    var newposY = y - 350;
     setMouseX(newposX);
     setMouseY(newposY);
   };
 
   return (
-    <main>
-      <div
-        onMouseMove={getMouseLocation}
-        onClick={getMouseLocation}
-        className="flex justify-center content-between min-h-screen min-w-full px-6 bg-indigo-950"
-      >
-        <CursorCircle locX={mouseX} locY={mouseY} />
+    <main onMouseMove={getMouseLocation}>
+      <CursorCircle locX={mouseX} locY={mouseY} />
+      <div className="flex justify-center content-between min-h-screen min-w-full px-6 bg-indigo-950">
         <CustomSection>
           <AboutMe />
         </CustomSection>
