@@ -35,6 +35,7 @@ const AboutMe = () => {
       linkUrl: "https://www.linkedin.com/in/jmoore99/",
     },
   ];
+
   return (
     <div className="flex flex-col">
       <span className="text-5xl text-transparent">Hi! I&apos;m James</span>
