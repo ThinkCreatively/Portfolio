@@ -5,7 +5,7 @@ import AboutMeImage from "./aboutMeImage";
 const AboutMe = () => {
   return (
     <div className="flex flex-col">
-      <span className="text-5xl">Hi! I&apos;m James</span>
+      <span className="text-5xl text-black/50 z-3">Hi! I&apos;m James</span>
       <Image src="" alt="test" height="300" width="300" />
       <span className="text-xl">
         I&apos;m a Software Engineer from Denver Colorado who enjoys the puzzle
