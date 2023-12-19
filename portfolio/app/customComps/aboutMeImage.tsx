@@ -15,7 +15,7 @@ const AboutMeImage = ({ src, alt, linkUrl, className }: AboutMeProps) => {
       target="_blank"
       className={`${linkUrl ? "pointer-events-auto" : "pointer-events-none"}`}
     >
-      <Image src={src} alt={alt} height={80} width={80} className={className} />
+      <Image src={src} alt={alt} height={40} width={40} className={className} />
     </Link>
   );
 };
