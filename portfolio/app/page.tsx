@@ -22,10 +22,10 @@ export default function Home() {
     <main onMouseMove={getMouseLocation}>
       <CursorCircle locX={mouseX} locY={mouseY} />
       <div className="flex justify-center content-between min-h-screen min-w-full px-6 bg-indigo-950">
-        <CustomSection>
+        <CustomSection extra="w-1/3">
           <AboutMe />
         </CustomSection>
-        <CustomSection extra="items-center justify-evenly">
+        <CustomSection extra="items-center justify-evenly -mr-10">
           <Projects />
         </CustomSection>
       </div>
