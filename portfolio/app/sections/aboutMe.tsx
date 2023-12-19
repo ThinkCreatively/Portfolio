@@ -28,7 +28,7 @@ const AboutMe = () => {
     <div className="flex flex-col min-h-full">
       <div className="flex flex-col">
         <span className="text-5xl">James Moore</span>
-        <span className="text-2xl">Aspiring Software Engineer</span>
+        <span className="text-2xl mt-3">Aspiring Software Engineer</span>
         <span className="text-l text-slate-300">
           I create refreshing and unique experiences on the web
         </span>
