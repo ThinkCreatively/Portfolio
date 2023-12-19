@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import CustomSection from "./customComps/section";
-import AboutMe from "./customComps/aboutMe";
-import ProjectBlock from "./customComps/projectBlock";
+import AboutMe from "./sections/aboutMe";
+import Projects from "./sections/projects";
 import CursorCircle from "./customComps/cursorCirlce";
 
 export default function Home() {
@@ -26,9 +26,7 @@ export default function Home() {
           <AboutMe />
         </CustomSection>
         <CustomSection extra="items-center justify-evenly">
-          <ProjectBlock />
-          <ProjectBlock />
-          <ProjectBlock />
+          <Projects />
         </CustomSection>
       </div>
     </main>
