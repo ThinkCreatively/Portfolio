@@ -1,19 +1,22 @@
-import React from "react";
-import Image from "next/image";
+"use client";
+import React, { useState } from "react";
 import Link from "next/link";
-import GithubIcon from "../../public/Github.svg";
-import LinkedInIcon from "../../public/LinkedIn.svg";
+import GithubIcon from "../customComps/svgs/GithubIcon";
+import LinkedInIcon from "../customComps/svgs/LinkedInIcon";
 
 const AboutMe = () => {
+  let [isGHHovered, setIsGHHovered] = useState(false);
+  let [isLIHovered, setIsLIHovered] = useState(false);
+
   const links = [
     {
-      icon: GithubIcon,
-      alt: "Github",
+      icon: <GithubIcon color={isGHHovered ? "#FFFFFF" : "#AEAEAE"} />,
+      iconSetState: setIsGHHovered,
       link: "https://github.com/ThinkCreatively",
     },
     {
-      icon: LinkedInIcon,
-      alt: "LinkedIn",
+      icon: <LinkedInIcon color={isLIHovered ? "#FFFFFF" : "#AEAEAE"} />,
+      iconSetState: setIsLIHovered,
       link: "https://www.linkedin.com/in/jmoore99/",
     },
   ];
@@ -28,7 +31,7 @@ const AboutMe = () => {
     <div className="flex flex-col min-h-full">
       <div className="flex flex-col">
         <span className="text-5xl">James Moore</span>
-        <span className="text-2xl mt-3">Aspiring Software Engineer</span>
+        <span className="text-2xl mt-3">Experienced Software Engineer</span>
         <span className="text-l text-slate-300">
           I create refreshing and unique experiences on the web
         </span>
@@ -42,9 +45,18 @@ const AboutMe = () => {
       </div>
       <div className="flex justify-start mt-5">
         {links.map((item, i) => (
-          <div key={i} className="mr-5">
+          <div
+            key={i}
+            className="mr-5"
+            onMouseEnter={() => {
+              item.iconSetState(true);
+            }}
+            onMouseLeave={() => {
+              item.iconSetState(false);
+            }}
+          >
             <Link href={item.link} target="_blank">
-              <Image src={item.icon} alt={item.alt} height={40} width={40} />
+              {item.icon}
             </Link>
           </div>
         ))}

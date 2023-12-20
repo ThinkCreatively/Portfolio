@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const ProjectBlock = () => {
   return (
-    <div className="flex rounded border-2 h-32 w-10/12 hover:shadow-lg hover:shadow-white mt-10">
+    <div className="flex rounded border-2 h-32 w-full hover:shadow-lg hover:shadow-white mt-10">
       <div className="relative h-full w-40 mr-5">
         <Image
           src=""
