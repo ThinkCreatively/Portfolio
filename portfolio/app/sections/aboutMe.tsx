@@ -22,7 +22,7 @@ const AboutMe = () => {
   ];
 
   const aboutMeBlurbs = [
-    "I started my tech journey back in 2021 when I worked at a smoothie bar. While there I was introduced to software engineer who was in between jobs and he opened my eyes to the world of software engineering and gave me some resources to learn how to code basic html, css, and javascript.",
+    "I started my tech journey back in 2021 when I worked at a smoothie bar. While there I was introduced to a software engineer who was in between jobs and he opened my eyes to the world of software engineering and gave me some resources to learn how to code basic html, css, and javascript.",
     "After going through these entry level courses, I found myself enjoying the challenges that comes along with coding and sought to get a deeper understanding. In this pursuit I came across Hack Reactor, a bootcamp that got me off my feet and running in the tech world as a junior front end dev. Two years later, still seeking a deeper knowledge of software I enrolled into Western Governors University to get my BS in Computer Science.",
     "Nowadays I work on the backend while when I am not working I have shifted my focus on becoming more of a master on the front end as I enjoy the creativety that comes along web design. Outside of code you can find me at the nearest spicy chicken joint, playing my cats, or snowboarding in the winter time.",
   ];
