@@ -23,16 +23,6 @@ const ProjectBlock = () => {
       </div>
       <span className="flex h-1/3 px-2 border-2 border-green-500">
         Text blurb describing the project
-        Text blurb describing the project
-        Text blurb describing the project
-        Text blurb describing the project
-        Text blurb describing the project
-        Text blurb describing the project
-        Text blurb describing the project
-        Text blurb describing the project
-        Text blurb describing the project
-        Text blurb describing the project
-        Text blurb describing the project
       </span>
       <div className="flex flex-wrap px-2">
         {testDataTags.map((item, i) => (

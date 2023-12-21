@@ -11,6 +11,9 @@ const Projects = () => {
       <ProjectBlock />
       <ProjectBlock />
       <ProjectBlock />
+      <ProjectBlock />
+      <ProjectBlock />
+      <ProjectBlock />
     </div>
   );
 };
