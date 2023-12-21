@@ -8,7 +8,7 @@ interface CustomeSectionProps {
 const CustomSection = ({ children, extra }: CustomeSectionProps) => {
   return (
     <div
-      className={`flex flex-col relative overflow-auto justify-center ml-5 min-h-screen max-h-screen items-top w-1/2 self-start ${
+      className={`flex flex-col relative overflow-auto justify-center ml-5 min-h-screen items-top w-1/2 self-start ${
         extra ? extra : ""
       }`}
     >

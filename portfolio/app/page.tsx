@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <main onMouseMove={getMouseLocation}>
       <CursorCircle locX={mouseX} locY={mouseY} />
-      <div className="flex justify-center content-between min-h-screen min-w-full px-6 bg-indigo-950 ">
+      <div className="flex justify-center content-between min-h-screen min-w-full px-6 bg-indigo-950">
         <CustomSection extra="w-5/12">
           <AboutMe />
         </CustomSection>
