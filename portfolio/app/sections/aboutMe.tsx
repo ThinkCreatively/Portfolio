@@ -28,7 +28,7 @@ const AboutMe = () => {
   ];
 
   return (
-    <div className="flex flex-col min-h-full">
+    <div className="flex flex-col min-h-full fixed w-5/12 top-20 left-10">
       <div className="flex flex-col">
         <span className="text-5xl">James Moore</span>
         <span className="text-2xl mt-3">Experienced Software Engineer</span>

@@ -25,7 +25,7 @@ export default function Home() {
         <CustomSection extra="w-5/12">
           <AboutMe />
         </CustomSection>
-        <CustomSection extra="items-center justify-evenly -mr-10 max-h-full overflow-auto">
+        <CustomSection extra="items-center items-start h-full overflow-auto">
           <Projects />
         </CustomSection>
       </div>
