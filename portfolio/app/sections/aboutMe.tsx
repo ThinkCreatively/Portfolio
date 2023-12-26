@@ -3,10 +3,12 @@ import React, { useState } from "react";
 import Link from "next/link";
 import GithubIcon from "../customComps/svgs/GithubIcon";
 import LinkedInIcon from "../customComps/svgs/LinkedInIcon";
+import ResumeIcon from "../customComps/svgs/ResumeIcon";
 
 const AboutMe = () => {
   let [isGHHovered, setIsGHHovered] = useState(false);
   let [isLIHovered, setIsLIHovered] = useState(false);
+  let [isRHovered, setIsRHovered] = useState(false);
 
   const links = [
     {
@@ -18,6 +20,11 @@ const AboutMe = () => {
       icon: <LinkedInIcon color={isLIHovered ? "#FFFFFF" : "#AEAEAE"} />,
       iconSetState: setIsLIHovered,
       link: "https://www.linkedin.com/in/jmoore99/",
+    },
+    {
+      icon: <ResumeIcon color={isRHovered ? "#FFFFFF" : "#AEAEAE"} />,
+      iconSetState: setIsRHovered,
+      link: "https://docs.google.com/document/d/e/2PACX-1vT8MclRiOin_Jza9uL47WLaKHpn-ByEQLktz4c3Qv13q54xyiE6D1C0Qe7_plZv9DoMiIKOPKeYH8mF/pub",
     },
   ];
 
