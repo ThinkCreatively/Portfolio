@@ -6,62 +6,41 @@ const Projects = () => {
     {
       title: "Dish Network",
       dates: ["2021", "2023"],
-      desc: "Nice description about number of projects and what I did on each one",
-      stackTags: ["Javascript", "Typescript", "React", "C++", "Golang"],
-    },
-    {
-      title: "Dish Network",
-      dates: ["2021", "2023"],
-      desc: "Nice description about number of projects and what I did on each one",
-      stackTags: ["Javascript", "Typescript", "React", "C++", "Golang"],
-    },
-    {
-      title: "Dish Network",
-      dates: ["2021", "2023"],
-      desc: "Nice description about number of projects and what I did on each one",
-      stackTags: ["Javascript", "Typescript", "React", "C++", "Golang"],
-    },
-    {
-      title: "Dish Network",
-      dates: ["2021", "2023"],
-      desc: "Nice description about number of projects and what I did on each one",
-      stackTags: ["Javascript", "Typescript", "React", "C++", "Golang"],
-    },
-    {
-      title: "Dish Network",
-      dates: ["2021", "2023"],
-      desc: "Nice description about number of projects and what I did on each one",
-      stackTags: ["Javascript", "Typescript", "React", "C++", "Golang"],
-    },
-    {
-      title: "Dish Network",
-      dates: ["2021", "2023"],
-      desc: "Nice description about number of projects and what I did on each one",
-      stackTags: ["Javascript", "Typescript", "React", "C++", "Golang"],
-    },
-    {
-      title: "Dish Network",
-      dates: ["2021", "2023"],
-      desc: "Nice description about number of projects and what I did on each one",
-      stackTags: ["Javascript", "Typescript", "React", "C++", "Golang"],
+      desc: "Worked on an array of projects providing support on the full spectrum of the stack. Aided in code review while ensuring best code practices were being used within my own code and holding others to such standards",
+      feats: [
+        "Sling (React, Redux, Javascript, Node )",
+        "Sling Rewards (Golang, Typescript, React, React Native )",
+        "Onstream ( Typescript, Node, React, Mongo )",
+        "Encoder ( C++, Python )",
+      ],
+      stackTags: [
+        "Javascript",
+        "Typescript",
+        "Node",
+        "React",
+        "React Native",
+        "Redux",
+        "C++",
+        "Golang",
+        "Python",
+      ],
     },
   ];
 
   return (
     <div className="flex flex-col overflow-auto">
-      <div className="flex justify-evenly text-l text-slate-300">
-        <div>⎯⎯⎯⎯⎯⎯⎯⎯⎯ Experience ⎯⎯⎯⎯⎯⎯⎯⎯⎯</div>
-        <div>⎯⎯⎯⎯⎯⎯⎯⎯⎯ Projects ⎯⎯⎯⎯⎯⎯⎯⎯⎯</div>
-      </div>
+      <span className="text-2xl">Experience</span>
       {experiences.map((item, i) => (
         <ProjectBlock
           key={i}
           title={item.title}
           dates={item.dates}
           desc={item.desc}
+          feats={item.feats}
           tags={item.stackTags}
         />
       ))}
+      <span className="text-2xl">Projects</span>
     </div>
   );
 };
