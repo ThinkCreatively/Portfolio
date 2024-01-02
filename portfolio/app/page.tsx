@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import CustomSection from "./customComps/section";
 import AboutMe from "./sections/aboutMe";
 import Projects from "./sections/projects";
@@ -8,6 +8,7 @@ import CursorCircle from "./customComps/cursorCirlce";
 export default function Home() {
   let [mouseX, setMouseX] = useState(0);
   let [mouseY, setMouseY] = useState(0);
+  let [screenWidth, setScreenWidth] = useState(0);
 
   const getMouseLocation = (e: any) => {
     var x = e.clientX;
@@ -18,14 +19,18 @@ export default function Home() {
     setMouseY(newposY);
   };
 
+  useEffect(() => {
+    setScreenWidth(window.innerWidth);
+  }, []);
+
   return (
     <main onMouseMove={getMouseLocation}>
-      <CursorCircle locX={mouseX} locY={mouseY} />
+      {screenWidth > 770 ? <CursorCircle locX={mouseX} locY={mouseY} /> : null}
       <div className="flex justify-center content-between min-h-screen px-6 bg-indigo-950 overflow-hidden">
-        <CustomSection extra="w-5/12">
+        <CustomSection extra="w-5/12 md:w-full">
           <AboutMe />
         </CustomSection>
-        <CustomSection extra="items-center items-start h-full overflow-auto">
+        <CustomSection extra="items-center items-start h-full overflow-auto sm:w-full">
           <Projects />
         </CustomSection>
       </div>

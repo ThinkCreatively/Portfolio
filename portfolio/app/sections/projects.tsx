@@ -39,7 +39,8 @@ const Projects = () => {
           tags={item.stackTags}
         />
       ))}
-      <span className="text-2xl">Projects</span>
+      {/* TODO: Pprojects when I have more to put on */}
+      {/* <span className="text-2xl">Projects</span> */}
     </div>
   );
 };
