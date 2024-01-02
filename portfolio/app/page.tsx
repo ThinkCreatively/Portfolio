@@ -26,11 +26,11 @@ export default function Home() {
   return (
     <main onMouseMove={getMouseLocation}>
       {screenWidth > 770 ? <CursorCircle locX={mouseX} locY={mouseY} /> : null}
-      <div className="flex justify-center content-between min-h-screen px-6 bg-indigo-950 overflow-hidden">
-        <CustomSection extra="w-5/12 md:w-full">
-          <AboutMe />
+      <div className="flex flex-col justify-center content-between min-h-screen px-6 bg-indigo-950 overflow-hidden lg:flex-row">
+        <CustomSection extra="w-full lg:w-5/12">
+          <AboutMe screenWidth={screenWidth} />
         </CustomSection>
-        <CustomSection extra="items-center items-start h-full overflow-auto sm:w-full">
+        <CustomSection extra="items-center items-start h-full overflow-auto w-full lg:w-1/2">
           <Projects />
         </CustomSection>
       </div>

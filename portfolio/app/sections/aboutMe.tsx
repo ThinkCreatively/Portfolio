@@ -5,7 +5,11 @@ import GithubIcon from "../customComps/svgs/GithubIcon";
 import LinkedInIcon from "../customComps/svgs/LinkedInIcon";
 import ResumeIcon from "../customComps/svgs/ResumeIcon";
 
-const AboutMe = () => {
+interface AboutMeProps {
+  screenWidth: number;
+}
+
+const AboutMe = ({ screenWidth }: AboutMeProps) => {
   let [isGHHovered, setIsGHHovered] = useState(false);
   let [isLIHovered, setIsLIHovered] = useState(false);
   let [isRHovered, setIsRHovered] = useState(false);
@@ -35,7 +39,7 @@ const AboutMe = () => {
   ];
 
   return (
-    <div className="flex flex-col min-h-full my-10">
+    <div className="flex flex-col my-10">
       <div className="flex flex-col">
         <span className="text-5xl">James Moore</span>
         <span className="text-2xl mt-3">Experienced Software Engineer</span>
@@ -44,11 +48,13 @@ const AboutMe = () => {
         </span>
       </div>
       <div className="flex flex-col">
-        {aboutMeBlurbs.map((blurb, i) => (
-          <span key={i} className="text-l text-slate-400 mt-5">
-            {blurb}
-          </span>
-        ))}
+        {screenWidth > 770
+          ? aboutMeBlurbs.map((blurb, i) => (
+              <span key={i} className="text-l text-slate-400 mt-5">
+                {blurb}
+              </span>
+            ))
+          : null}
       </div>
       <div className="flex justify-start mt-5">
         {links.map((item, i) => (
