@@ -6,7 +6,7 @@ const Projects = () => {
     {
       title: "Dish Network",
       dates: ["2021", "2023"],
-      desc: "Worked on an array of projects providing support on the full spectrum of the stack. Aided in code review while ensuring best code practices were being used within my own code and holding others to such standards",
+      desc: "Worked on an array of projects providing support on the full spectrum of the stack. During code review, aided in ensuring best code practices were being used within my own code and holding others to such standards",
       feats: [
         "Sling (React, Redux, Typescript, Node )",
         "Sling Rewards (Golang, Typescript, React, React Native )",
