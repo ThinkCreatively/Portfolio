@@ -10,8 +10,8 @@ const Projects = () => {
       feats: [
         "Sling (React, Redux, Typescript, Node )",
         "Sling Rewards (Golang, Typescript, React, React Native )",
-        "Onstream ( Typescript, Node, React, Mongo )",
-        "Encoder ( C++, Python )",
+        "Onstream (Typescript, Node, React, Mongo)",
+        "Encoder (C++, Python)",
       ],
       stackTags: [
         "Typescript",
