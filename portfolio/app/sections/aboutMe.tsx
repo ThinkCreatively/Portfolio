@@ -48,13 +48,11 @@ const AboutMe = ({ screenWidth }: AboutMeProps) => {
         </span>
       </div>
       <div className="flex flex-col">
-        {screenWidth > 770
-          ? aboutMeBlurbs.map((blurb, i) => (
-              <span key={i} className="text-l text-slate-400 mt-5">
-                {blurb}
-              </span>
-            ))
-          : null}
+        {aboutMeBlurbs.map((blurb, i) => (
+          <span key={i} className="text-l text-slate-400 mt-5">
+            {blurb}
+          </span>
+        ))}
       </div>
       <div className="flex justify-start mt-5">
         {links.map((item, i) => (
