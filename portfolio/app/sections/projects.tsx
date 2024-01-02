@@ -27,7 +27,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="flex flex-col overflow-auto h-screen lg:my-20">
+    <div className="flex flex-col overflow-auto h-auto lg:my-20 lg:h-screen">
       <span className="text-2xl">Experience</span>
       {experiences.map((item, i) => (
         <ProjectBlock
