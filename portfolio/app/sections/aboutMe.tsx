@@ -42,7 +42,7 @@ const AboutMe = () => {
         <span className="text-l text-slate-300">
           I create refreshing and unique experiences on the web
         </span>
-        {navigator.maxTouchPoints ? (
+        {window.navigator.maxTouchPoints ? (
           <div className="flex justify-start mt-5">
             {links.map((item, i) => (
               <div

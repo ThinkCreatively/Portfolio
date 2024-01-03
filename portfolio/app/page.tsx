@@ -25,7 +25,7 @@ export default function Home() {
 
   return (
     <main onMouseMove={getMouseLocation}>
-      {navigator.maxTouchPoints ? null : (
+      {window.navigator.maxTouchPoints ? null : (
         <CursorCircle locX={mouseX} locY={mouseY} />
       )}
       <div className="flex flex-col justify-center content-between min-h-screen px-6 bg-indigo-950 overflow-hidden lg:flex-row">
