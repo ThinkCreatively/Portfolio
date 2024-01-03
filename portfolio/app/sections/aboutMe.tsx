@@ -5,7 +5,11 @@ import GithubIcon from "../customComps/svgs/GithubIcon";
 import LinkedInIcon from "../customComps/svgs/LinkedInIcon";
 import ResumeIcon from "../customComps/svgs/ResumeIcon";
 
-const AboutMe = () => {
+interface AboutMeProps {
+  screenWidth: number;
+}
+
+const AboutMe = ({ screenWidth }: AboutMeProps) => {
   let [isGHHovered, setIsGHHovered] = useState(false);
   let [isLIHovered, setIsLIHovered] = useState(false);
   let [isRHovered, setIsRHovered] = useState(false);
@@ -42,7 +46,7 @@ const AboutMe = () => {
         <span className="text-l text-slate-300">
           I create refreshing and unique experiences on the web
         </span>
-        {window.navigator.maxTouchPoints ? (
+        {screenWidth > 770 ? null : (
           <div className="flex justify-start mt-5">
             {links.map((item, i) => (
               <div
@@ -61,7 +65,7 @@ const AboutMe = () => {
               </div>
             ))}
           </div>
-        ) : null}
+        )}
       </div>
       <div className="flex flex-col">
         {aboutMeBlurbs.map((blurb, i) => (
@@ -70,7 +74,7 @@ const AboutMe = () => {
           </span>
         ))}
       </div>
-      {navigator.maxTouchPoints ? null : (
+      {screenWidth > 770 ? (
         <div className="flex justify-start mt-5">
           {links.map((item, i) => (
             <div
@@ -89,7 +93,7 @@ const AboutMe = () => {
             </div>
           ))}
         </div>
-      )}
+      ) : null}
     </div>
   );
 };
