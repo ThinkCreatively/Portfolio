@@ -1,44 +1,29 @@
 import React from "react";
 import ProjectBlock from "../customComps/projectBlock";
+import WorkExperiences from "./workExperience";
 
 const Projects = () => {
-  const experiences = [
-    {
-      title: "Dish Network",
-      dates: ["2021", "2023"],
-      desc: "Worked on an array of projects providing support on the full spectrum of the stack. During code review, aided in ensuring best code practices were being used within my own code and holding others to such standards",
-      feats: [
-        "Sling (React, Redux, Typescript, Node )",
-        "Sling Rewards (Golang, Typescript, React, React Native )",
-        "Onstream (Typescript, Node, React, Mongo)",
-        "Encoder (C++, Python)",
-      ],
-      stackTags: [
-        "Typescript",
-        "Node",
-        "React",
-        "React Native",
-        "Redux",
-        "C++",
-        "Golang",
-        "Python",
-      ],
-    },
-  ];
-
   return (
     <div className="flex flex-col overflow-auto h-auto lg:my-20 lg:h-screen">
       <span className="text-2xl">Experience</span>
-      {experiences.map((item, i) => (
-        <ProjectBlock
-          key={i}
-          title={item.title}
-          dates={item.dates}
-          desc={item.desc}
-          feats={item.feats}
-          tags={item.stackTags}
-        />
+      {WorkExperiences.map((job, i) => (
+        <div className=" mt-5" key={i}>
+          <span className="text-xl text-slate-300">{job.workTitle}</span>
+          <div className="flex flex-col">
+            {job.projects.map((project, j) => (
+              <ProjectBlock
+                key={j}
+                title={project.title}
+                dates={project.dates}
+                desc={project.desc}
+                feats={project.feats}
+                tags={project.stackTags}
+              />
+            ))}
+          </div>
+        </div>
       ))}
+
       {/* TODO: Pprojects when I have more to put on */}
       {/* <span className="text-2xl">Projects</span> */}
     </div>

@@ -46,6 +46,26 @@ const AboutMe = ({ screenWidth }: AboutMeProps) => {
         <span className="text-l text-slate-300">
           I create refreshing and unique experiences on the web
         </span>
+        {screenWidth > 770 ? null : (
+          <div className="flex justify-start mt-5">
+            {links.map((item, i) => (
+              <div
+                key={i}
+                className="mr-5"
+                onMouseEnter={() => {
+                  item.iconSetState(true);
+                }}
+                onMouseLeave={() => {
+                  item.iconSetState(false);
+                }}
+              >
+                <Link href={item.link} target="_blank">
+                  {item.icon}
+                </Link>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
       <div className="flex flex-col">
         {aboutMeBlurbs.map((blurb, i) => (
@@ -54,24 +74,26 @@ const AboutMe = ({ screenWidth }: AboutMeProps) => {
           </span>
         ))}
       </div>
-      <div className="flex justify-start mt-5">
-        {links.map((item, i) => (
-          <div
-            key={i}
-            className="mr-5"
-            onMouseEnter={() => {
-              item.iconSetState(true);
-            }}
-            onMouseLeave={() => {
-              item.iconSetState(false);
-            }}
-          >
-            <Link href={item.link} target="_blank">
-              {item.icon}
-            </Link>
-          </div>
-        ))}
-      </div>
+      {screenWidth > 770 ? (
+        <div className="flex justify-start mt-5">
+          {links.map((item, i) => (
+            <div
+              key={i}
+              className="mr-5"
+              onMouseEnter={() => {
+                item.iconSetState(true);
+              }}
+              onMouseLeave={() => {
+                item.iconSetState(false);
+              }}
+            >
+              <Link href={item.link} target="_blank">
+                {item.icon}
+              </Link>
+            </div>
+          ))}
+        </div>
+      ) : null}
     </div>
   );
 };
