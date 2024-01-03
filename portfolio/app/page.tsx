@@ -23,13 +23,14 @@ export default function Home() {
     setScreenWidth(window.innerWidth);
   }, []);
 
-  console.log(screenWidth);
   return (
     <main onMouseMove={getMouseLocation}>
-      {screenWidth > 770 ? <CursorCircle locX={mouseX} locY={mouseY} /> : null}
+      {navigator.maxTouchPoints ? null : (
+        <CursorCircle locX={mouseX} locY={mouseY} />
+      )}
       <div className="flex flex-col justify-center content-between min-h-screen px-6 bg-indigo-950 overflow-hidden lg:flex-row">
         <CustomSection extra="w-full lg:w-5/12">
-          <AboutMe screenWidth={screenWidth} />
+          <AboutMe />
         </CustomSection>
         <CustomSection extra="items-center items-start h-full overflow-auto w-full lg:w-1/2">
           <Projects />

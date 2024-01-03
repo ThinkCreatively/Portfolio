@@ -5,11 +5,7 @@ import GithubIcon from "../customComps/svgs/GithubIcon";
 import LinkedInIcon from "../customComps/svgs/LinkedInIcon";
 import ResumeIcon from "../customComps/svgs/ResumeIcon";
 
-interface AboutMeProps {
-  screenWidth: number;
-}
-
-const AboutMe = ({ screenWidth }: AboutMeProps) => {
+const AboutMe = () => {
   let [isGHHovered, setIsGHHovered] = useState(false);
   let [isLIHovered, setIsLIHovered] = useState(false);
   let [isRHovered, setIsRHovered] = useState(false);
@@ -46,6 +42,26 @@ const AboutMe = ({ screenWidth }: AboutMeProps) => {
         <span className="text-l text-slate-300">
           I create refreshing and unique experiences on the web
         </span>
+        {navigator.maxTouchPoints ? (
+          <div className="flex justify-start mt-5">
+            {links.map((item, i) => (
+              <div
+                key={i}
+                className="mr-5"
+                onMouseEnter={() => {
+                  item.iconSetState(true);
+                }}
+                onMouseLeave={() => {
+                  item.iconSetState(false);
+                }}
+              >
+                <Link href={item.link} target="_blank">
+                  {item.icon}
+                </Link>
+              </div>
+            ))}
+          </div>
+        ) : null}
       </div>
       <div className="flex flex-col">
         {aboutMeBlurbs.map((blurb, i) => (
@@ -54,24 +70,26 @@ const AboutMe = ({ screenWidth }: AboutMeProps) => {
           </span>
         ))}
       </div>
-      <div className="flex justify-start mt-5">
-        {links.map((item, i) => (
-          <div
-            key={i}
-            className="mr-5"
-            onMouseEnter={() => {
-              item.iconSetState(true);
-            }}
-            onMouseLeave={() => {
-              item.iconSetState(false);
-            }}
-          >
-            <Link href={item.link} target="_blank">
-              {item.icon}
-            </Link>
-          </div>
-        ))}
-      </div>
+      {navigator.maxTouchPoints ? null : (
+        <div className="flex justify-start mt-5">
+          {links.map((item, i) => (
+            <div
+              key={i}
+              className="mr-5"
+              onMouseEnter={() => {
+                item.iconSetState(true);
+              }}
+              onMouseLeave={() => {
+                item.iconSetState(false);
+              }}
+            >
+              <Link href={item.link} target="_blank">
+                {item.icon}
+              </Link>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 };
