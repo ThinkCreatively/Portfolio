@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { IsClientCtxProvider } from "./isClientCtx";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -39,7 +38,7 @@ export default function RootLayout({
         <link rel="manifest" href="/public/site.webmanifest" />
       </head>
       <body className={inter.className}>
-        <IsClientCtxProvider>{children}</IsClientCtxProvider>
+        {children}
         <Analytics />
       </body>
     </html>

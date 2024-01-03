@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import { IsClientCtxProvider } from "./isClientCtx";
 import CustomSection from "./customComps/section";
 import AboutMe from "./sections/aboutMe";
 import Projects from "./sections/projects";
@@ -25,17 +26,19 @@ export default function Home() {
 
   return (
     <main onMouseMove={getMouseLocation}>
-      {window.navigator.maxTouchPoints ? null : (
-        <CursorCircle locX={mouseX} locY={mouseY} />
-      )}
-      <div className="flex flex-col justify-center content-between min-h-screen px-6 bg-indigo-950 overflow-hidden lg:flex-row">
-        <CustomSection extra="w-full lg:w-5/12">
-          <AboutMe />
-        </CustomSection>
-        <CustomSection extra="items-center items-start h-full overflow-auto w-full lg:w-1/2">
-          <Projects />
-        </CustomSection>
-      </div>
+      <IsClientCtxProvider>
+        {window.navigator.maxTouchPoints ? null : (
+          <CursorCircle locX={mouseX} locY={mouseY} />
+        )}
+        <div className="flex flex-col justify-center content-between min-h-screen px-6 bg-indigo-950 overflow-hidden lg:flex-row">
+          <CustomSection extra="w-full lg:w-5/12">
+            <AboutMe />
+          </CustomSection>
+          <CustomSection extra="items-center items-start h-full overflow-auto w-full lg:w-1/2">
+            <Projects />
+          </CustomSection>
+        </div>
+      </IsClientCtxProvider>
     </main>
   );
 }
