@@ -1,6 +1,7 @@
 const WorkExperiences = [
   {
     workTitle: "Dish Network",
+    timeWorked: "2.5 years",
     projects: [
       {
         title: "Encoder As a Service (ENCAAS)",
