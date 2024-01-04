@@ -8,7 +8,10 @@ const Projects = () => {
       <span className="text-2xl">Experience</span>
       {WorkExperiences.map((job, i) => (
         <div className=" mt-5" key={i}>
-          <span className="text-xl text-slate-300">{job.workTitle}</span>
+          <div className="flex justify-between">
+            <span className="text-xl text-slate-300">{job.workTitle}</span>
+            <span className="text-xl text-slate-300">{job.timeWorked}</span>
+          </div>
           <div className="flex flex-col">
             {job.projects.map((project, j) => (
               <ProjectBlock
