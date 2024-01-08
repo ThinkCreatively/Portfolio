@@ -8,8 +8,8 @@ const WorkExperiences = [
         dates: ["06/23", "12/23"],
         desc: "Helped produce a service that encodes video and audio streams",
         feats: [
-          "Worked directly with video and audio frames to fix crashing of service when loss of frames occured",
-          "Became the main engineer working with the pipelines to instill consitant deployments in all environments",
+          "Worked directly with video and audio frames to fix crashing of service when loss of frames occurred",
+          "Became the main engineer working with the pipelines to instill consistent deployments in all environments",
           "Conducted thorough testing of video and audio quality from numerous points within multiple micro services",
         ],
         stackTags: ["C++", "Python", "CI/CD", "Sencore", "Sentry"],
