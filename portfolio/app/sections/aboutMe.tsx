@@ -28,7 +28,7 @@ const AboutMe = ({ screenWidth }: AboutMeProps) => {
     {
       icon: <ResumeIcon color={isRHovered ? "#FFFFFF" : "#AEAEAE"} />,
       iconSetState: setIsRHovered,
-      link: "https://docs.google.com/document/d/e/2PACX-1vT8MclRiOin_Jza9uL47WLaKHpn-ByEQLktz4c3Qv13q54xyiE6D1C0Qe7_plZv9DoMiIKOPKeYH8mF/pub",
+      link: "https://docs.google.com/document/d/e/2PACX-1vT6Swfh9k_XeZ-x72efOZotMtRXuaLiTtB0EdW8HHOasDTyoiAHqZBAFR1FxUjfG6kptTMdKvlWDC7P/pub",
     },
   ];
 
