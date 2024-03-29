@@ -1,11 +1,11 @@
 const WorkExperiences = [
   {
     workTitle: "Dish Network",
-    timeWorked: "2.5 years",
+    timeWorked: "3 years",
     projects: [
       {
         title: "Encoder As a Service (ENCAAS)",
-        dates: ["06/23", "12/23"],
+        dates: ["06/23", "01/24"],
         desc: "Helped produce a service that encodes video and audio streams",
         feats: [
           "Worked directly with video and audio frames to fix crashing of service when loss of frames occurred",
