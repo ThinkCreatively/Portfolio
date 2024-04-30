@@ -1,14 +1,10 @@
 import React from "react";
-import ProjectBlock from "../customComps/projectBlock";
-import WorkExperiences from "./workExperience";
+import ProjectBlock from "../../customComps/projectBlock";
+import WorkExperiences from "../workExperience";
 
-const Projects = () => {
+const Experience = () => {
   return (
-    <div className="flex flex-col overflow-auto h-auto lg:my-20 lg:h-screen">
-      <div className="flex space-x-2">
-        <span className="text-2xl">Experience</span>
-        <span className="text-2xl">Projects</span>
-      </div>
+    <div>
       {WorkExperiences.map((job, i) => (
         <div className=" mt-5" key={i}>
           <div className="flex justify-between">
@@ -29,10 +25,8 @@ const Projects = () => {
           </div>
         </div>
       ))}
-      {/* TODO: Projects when I have more to put on */}
-      {/* <span className="text-2xl">Projects</span> */}
     </div>
   );
 };
 
-export default Projects;
+export default Experience;
