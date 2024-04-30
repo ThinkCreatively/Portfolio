@@ -7,7 +7,7 @@ const Projects = () => {
       <ProjectBlock
         title="Wordle"
         dates={["03/24", "05/24"]}
-        desc="My own rendition of the popular word game Wordle. Given six tries, try to guess the word. Yellow letters mean right letter wrong position and green letters mean right letter right position."
+        desc="My version of the well-known word game Wordle. You have six attempts to guess the secret word. Yellow letters indicate the correct letter but in the wrong position, while green letters signify both the correct letter and its correct position."
         feats={["TBD", "TEST", "Will find out"]}
         tags={["React", "TailwindCSS"]}
         extraStyling="w-full"
