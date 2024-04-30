@@ -5,20 +5,22 @@ interface ProjectBlockProps {
   title: string;
   dates: string[];
   desc: string;
-  feats?: string[];
   tags: string[];
+  feats?: string[];
+  extraStyling?: string;
 }
 
 const ProjectBlock = ({
   title,
   dates,
   desc,
-  feats,
   tags,
+  feats,
+  extraStyling,
 }: ProjectBlockProps) => {
   return (
     <div
-      className="flex flex-col px-2 pt-2 rounded my-5 shadow-md"
+      className={`flex flex-col px-2 pt-2 rounded my-5 shadow-md w-full ${extraStyling}`}
       style={{ backgroundColor: "rgba(49, 46, 129, 0.5)" }}
     >
       <div className="flex justify-between h-1/3">
