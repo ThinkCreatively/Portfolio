@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import CustomSection from "./customComps/section";
 import AboutMe from "./sections/aboutMe";
-import Projects from "./sections/projects";
+import PAndE from "./sections/pAndE";
 import CursorCircle from "./customComps/cursorCirlce";
 
 export default function Home() {
@@ -31,7 +31,7 @@ export default function Home() {
           <AboutMe screenWidth={screenWidth} />
         </CustomSection>
         <CustomSection extra="items-center items-start h-full overflow-auto w-full lg:w-1/2">
-          <Projects />
+          <PAndE />
         </CustomSection>
       </div>
     </main>
