@@ -11,8 +11,8 @@ export default function Home() {
   let [screenWidth, setScreenWidth] = useState(0);
 
   const getMouseLocation = (e: any) => {
-    var x = e.clientX;
-    var y = e.clientY;
+    var x = e.pageX;
+    var y = e.pageY;
     var newposX = x - 350;
     var newposY = y - 350;
     setMouseX(newposX);

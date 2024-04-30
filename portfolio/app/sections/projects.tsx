@@ -26,8 +26,7 @@ const Projects = () => {
           </div>
         </div>
       ))}
-
-      {/* TODO: Pprojects when I have more to put on */}
+      {/* TODO: Projects when I have more to put on */}
       {/* <span className="text-2xl">Projects</span> */}
     </div>
   );
