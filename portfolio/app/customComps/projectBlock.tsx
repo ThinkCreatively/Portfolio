@@ -51,7 +51,9 @@ const ProjectBlock = ({
             <TextPill key={i} text={tag} />
           ))}
         </div>
-        {tryButton ? <TryButton route={tryButtonRoute} /> : null}
+        {tryButton ? (
+          <TryButton text="Try Here" route={tryButtonRoute} />
+        ) : null}
       </div>
     </div>
   );
