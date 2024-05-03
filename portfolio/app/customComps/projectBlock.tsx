@@ -1,11 +1,13 @@
 import React from "react";
 import TextPill from "../customComps/textPill";
+import TryButton from "./tryButton";
 
 interface ProjectBlockProps {
   title: string;
   dates: string[];
   desc: string;
   tags: string[];
+  tryButton?: boolean;
   feats?: string[];
   extraStyling?: string;
 }
@@ -17,6 +19,7 @@ const ProjectBlock = ({
   tags,
   feats,
   extraStyling,
+  tryButton = false,
 }: ProjectBlockProps) => {
   return (
     <div
@@ -40,10 +43,13 @@ const ProjectBlock = ({
             ))
           : ""}
       </div>
-      <div className="flex flex-wrap">
-        {tags.map((tag, i) => (
-          <TextPill key={i} text={tag} />
-        ))}
+      <div className="flex justify-between">
+        <div className="flex flex-wrap">
+          {tags.map((tag, i) => (
+            <TextPill key={i} text={tag} />
+          ))}
+        </div>
+        {tryButton ? <TryButton text="Try Here" /> : null}
       </div>
     </div>
   );

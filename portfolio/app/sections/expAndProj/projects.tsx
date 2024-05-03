@@ -19,6 +19,7 @@ const Projects = () => {
                 desc={project.desc}
                 feats={project.feats}
                 tags={project.stackTags}
+                tryButton
               />
             ))}
           </div>
