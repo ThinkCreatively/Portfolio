@@ -8,6 +8,7 @@ interface ProjectBlockProps {
   desc: string;
   tags: string[];
   tryButton?: boolean;
+  tryButtonRoute?: string;
   feats?: string[];
   extraStyling?: string;
 }
@@ -20,6 +21,7 @@ const ProjectBlock = ({
   feats,
   extraStyling,
   tryButton = false,
+  tryButtonRoute = "/",
 }: ProjectBlockProps) => {
   return (
     <div
@@ -49,7 +51,7 @@ const ProjectBlock = ({
             <TextPill key={i} text={tag} />
           ))}
         </div>
-        {tryButton ? <TryButton text="Try Here" /> : null}
+        {tryButton ? <TryButton route={tryButtonRoute} /> : null}
       </div>
     </div>
   );

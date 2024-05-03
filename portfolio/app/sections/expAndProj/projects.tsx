@@ -20,6 +20,7 @@ const Projects = () => {
                 feats={project.feats}
                 tags={project.stackTags}
                 tryButton
+                tryButtonRoute={project.title}
               />
             ))}
           </div>
