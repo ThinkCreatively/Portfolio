@@ -8,7 +8,7 @@ const PAndE = () => {
 
   return (
     <div className="flex flex-col overflow-auto h-auto lg:mb-20 lg:mt-20 lg:h-screen">
-      <div className="flex flex-col overflow-hidden h-auto py-2 mb-5">
+      <div className="flex flex-col overflow-hidden h-auto mb-2 justify-center">
         <div className="space-x-2">
           <span
             className={`text-2xl cursor-pointer ${
