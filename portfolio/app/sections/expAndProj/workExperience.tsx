@@ -15,7 +15,7 @@ const WorkExperiences = [
         stackTags: ["C++", "Python", "CI/CD", "Sencore", "Sentry"],
       },
       {
-        title: "Sling Rewards",
+        title: "Sling Tv Rewards",
         dates: ["10/22", "06/23"],
         desc: "Constructed a rewards program within Sling utilizing blockchain",
         feats: [
@@ -33,7 +33,7 @@ const WorkExperiences = [
         ],
       },
       {
-        title: "Sling",
+        title: "Sling Tv",
         dates: ["06/22", "10/22"],
         desc: "Maintained Sling app by fixing a multitude of bugs to improve the user expierence wihle also building out the mobile side",
         feats: [
@@ -51,7 +51,7 @@ const WorkExperiences = [
         ],
       },
       {
-        title: "OnStream",
+        title: "Dish OnStream",
         dates: ["09/21", "06/22"],
         desc: "First project at Dish Network, Tasked with building entire hotel streaming service from scratch using Node, Typescript, React, Mongo, and Express.",
         feats: [
