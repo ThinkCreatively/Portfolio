@@ -37,7 +37,7 @@ export default function RootLayout({
         />
         <link rel="manifest" href="/public/site.webmanifest" />
       </head>
-      <body className={inter.className}>
+      <body className={inter.className} style={{ overflow: "hidden" }}>
         {children}
         <Analytics />
       </body>

@@ -30,7 +30,7 @@ export default function Home() {
         <CustomSection extra="w-full lg:w-5/12">
           <AboutMe screenWidth={screenWidth} />
         </CustomSection>
-        <CustomSection extra="items-center items-start h-full overflow-auto w-full lg:w-1/2">
+        <CustomSection extra="items-center items-start h-screen overflow-auto w-full lg:w-1/2">
           <PAndE />
         </CustomSection>
       </div>
