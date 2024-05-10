@@ -1,6 +1,7 @@
 import React from "react";
 import ProjectBlock from "../../customComps/projectBlock";
 import WorkExperiences from "./workExperience";
+import AcademicExperience from "./academicExp"
 
 const Experience = () => {
   return (
@@ -20,6 +21,26 @@ const Experience = () => {
                 desc={project.desc}
                 feats={project.feats}
                 tags={project.stackTags}
+              />
+            ))}
+          </div>
+        </div>
+      ))}
+      {AcademicExperience.map((study, i) => (
+        <div className=" mt-5" key={i}>
+          <div className="flex justify-between">
+            <span className="text-xl text-slate-300">{study.workTitle}</span>
+            <span className="text-xl text-slate-300">{study.timeWorked}</span>
+          </div>
+          <div className="flex flex-col">
+            {study.projects.map((acProject, j) => (
+              <ProjectBlock
+                key={j}
+                title={acProject.title}
+                dates={acProject.dates}
+                desc={acProject.desc}
+                feats={acProject.feats}
+                tags={acProject.stackTags}
               />
             ))}
           </div>
