@@ -1,14 +1,13 @@
 import React from "react";
-import ProjectBlock from "../customComps/projectBlock";
+import ProjectBlock from "../../customComps/projectBlock";
 import WorkExperiences from "./workExperience";
-import AcademicExperience from "./academicExp";
+import AcademicExperience from "./academicExp"
 
-const Projects = () => {
+const Experience = () => {
   return (
-    <div className="flex flex-col overflow-auto h-auto lg:my-20 lg:h-screen">
-      <span className="text-2xl">Experience</span>
+    <div>
       {WorkExperiences.map((job, i) => (
-        <div className=" mt-5" key={i}>
+        <div className="mt-5" key={i}>
           <div className="flex justify-between">
             <span className="text-xl text-slate-300">{job.workTitle}</span>
             <span className="text-xl text-slate-300">{job.timeWorked}</span>
@@ -51,4 +50,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Experience;

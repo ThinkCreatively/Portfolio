@@ -9,6 +9,7 @@ const CursorCircle = ({ locX, locY }: cursorCircleProps) => {
   return (
     <div
       style={{
+        position: "fixed",
         transform: `translate3d(${locX}px,${locY}px,0px)`,
         transition: "transform 0.2s cubic-bezier(.02, 1.23, .79, 1.08)",
         background:
