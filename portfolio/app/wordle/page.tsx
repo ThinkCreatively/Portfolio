@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
-import Link from "next/link";
+// import Link from "next/link";
 import TryButton from "../customComps/tryButton";
+import KeyBoard from "./keyboard";
 
 const Wordle = () => {
   return (
@@ -11,11 +12,7 @@ const Wordle = () => {
           <TryButton text="Home" route="/" />
         </div>
         <div className="border-2 w-96 h-96 mb-5">Test</div>
-        <div className="flex flex-col border-2 w-1/2 h-60 items-center">
-          <div>Top Row</div>
-          <div>Middle Row</div>
-          <div>Bottom Row</div>
-        </div>
+        <KeyBoard />
       </div>
     </div>
   );
