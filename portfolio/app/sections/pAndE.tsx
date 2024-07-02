@@ -20,7 +20,7 @@ const PAndE = () => {
           >
             Experience
           </span>
-          {/* <span
+          <span
             className={`text-2xl cursor-pointer ${
               expIsActive ? "text-gray-500" : ""
             }`}
@@ -29,7 +29,7 @@ const PAndE = () => {
             }}
           >
             Projects
-          </span> */}
+          </span>
         </div>
       </div>
       <div className="flex flex-col overflow-auto h-auto lg:h-screen">
