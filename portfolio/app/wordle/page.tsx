@@ -2,6 +2,7 @@
 import React from "react";
 // import Link from "next/link";
 import TryButton from "../customComps/tryButton";
+import Guesses from "./guesses";
 import KeyBoard from "./keyboard";
 
 const Wordle = () => {
@@ -11,7 +12,7 @@ const Wordle = () => {
         <div className="self-start">
           <TryButton text="Home" route="/" />
         </div>
-        <div className="border-2 w-96 h-96 mb-5">Test</div>
+        <Guesses />
         <KeyBoard />
       </div>
     </div>
