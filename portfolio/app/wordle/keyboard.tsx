@@ -35,7 +35,10 @@ const KeyBoard = () => {
   ];
 
   return (
-    <div className="flex flex-col border-2 w-1/2 h-60 items-center">
+    <div
+      className="flex flex-col rounded w-1/2 h-60 items-center"
+      style={{ backgroundColor: "rgba(49, 46, 129, 0.5)" }}
+    >
       <KeyRow letters={topLetters} />
       <KeyRow letters={midLetters} />
       <KeyRow letters={botLetters} />
