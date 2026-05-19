@@ -1,5 +1,44 @@
 const WorkExperiences = [
   {
+    workTitle: "FrontDoor",
+    timeWorked: "1 Year and Counting",
+    projects: [
+      {
+        title: "Customer Service Central",
+        dates: ["03/26", "Current"],
+        desc: "Sales & Authorizaiton Agent Portal",
+        feats: [
+          "Implemented test coverage reporting and analysis tooling across 10+ legacy C#/.NET services, increasing visibility into code quality and testing gaps Developed Live Activities integrations for the Commun",
+          "Collaborated closely with cross-functional development teams and followed technical specification documents to design and implement multiple API endpoints enabling inter-service communication for data such as payment history, appliance part inventory, and dispatch agent notes",
+          "Supported developers across multiple teams by troubleshooting technical blockers and assisting with the implementation and testing of new features and test cases"
+        ],
+        stackTags: ["Golang", "C#", ".NET", "Gitlab Pipelines"],
+      },
+      {
+        title: "Pheonix",
+        dates: ["11/25", "03/26"],
+        desc: "Support team aiding many other teams working on multiple different APIs and MFEs",
+        feats: [
+          "Developed Live Activities integrations for the Communications service to provide real-time mobile updates for queue status, expert availability, and customer engagement events",
+          "Developed and maintained test cases validating dismissal date timing logic for both predefined schedules and user-configured time inputs",
+          "Enhanced policy agent authorization controls for microservice access by implementing token validation aligned with ISO security best practices"
+        ],
+        stackTags: ["Golang", "C#", ".NET"],
+      },
+      {
+        title: "Appliance Portal",
+        dates: ["05/25", "11/25"],
+        desc: "Helped Appliance sales reps by adding new features to the Appliance Portal",
+        feats: [
+          "Collaborated with field agents to identify workflow pain points and implemented new product filtering capabilities, improving efficiency for customer-facing operations",
+          "Enhanced Golang backend APIs to support new MCodes across existing and newly introduced catalog products",
+          "Improved GitLab CI/CD workflows by introducing feature branch deployment capabilities, streamlining frontend testing and reducing dependency on coordinated releases",
+        ],
+        stackTags: ["Golang", "Gitlab Pipelines", "React"],
+      },
+    ],
+  },
+  {
     workTitle: "Metwork",
     timeWorked: "9 Months",
     projects: [
@@ -10,7 +49,7 @@ const WorkExperiences = [
         feats: [
           "Spearheaded the refactor of critical Metwork App modules, including the “Referrals” feature, leveraging Vue 3 and TypeScript to align UI with Figma designs and ensure accurate functionality in collaboration with QA",
           "Architected and maintained AWS deployment pipelines, automating delivery to S3 buckets and updating serverless functions for streamlined CI/CD processes",
-          "Formulated secure, SOC 2-compliant AWS Lambda functions in Golang, interfacing with custom-built DynamoDB databases to ensure robust and compliant data handling"
+          "Formulated secure, SOC 2-compliant AWS Lambda functions in Golang, interfacing with custom-built DynamoDB databases to ensure robust and compliant data handling",
         ],
         stackTags: [
           "Typescript",
@@ -20,8 +59,8 @@ const WorkExperiences = [
           "Vue",
           "AWS Services",
         ],
-      }
-    ]
+      },
+    ],
   },
   {
     workTitle: "Dish Network",
